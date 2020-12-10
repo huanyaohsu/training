@@ -1,0 +1,32 @@
+.d-flex{
+    display: flex;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-around{
+    justify-content: space-around;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.row-reverse{
+    flex-direction: row-reverse;
+}
+.title{
+    font-size: $h2-font-size;
+    line-height: 67px;
+    text-align: center;
+    font-weight: 700;
+    @include pad{
+        font-size: 32px;
+        line-height: 45px;
+    }
+    @include mobile{
+        font-size: $h4-font-size;
+        line-height: 33px;
+    }
+}

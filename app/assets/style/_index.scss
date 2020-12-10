@@ -1,0 +1,395 @@
+// banner
+.banner{
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png") center center no-repeat;
+    background-size: cover;
+    height: 840px;
+    @include pad{
+      background-position: 40%;
+      height: 840px;
+    }
+    @include mobile{
+      height: 394px;
+    }
+    color: $text-primary;
+    .container{
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      align-items: flex-end;
+    }
+    p{
+      font-weight: 700;
+      font-size: 2.25rem;
+      line-height: 50px;
+      @include pad{
+        font-size: $h5-font-size;
+        line-height: 28px;
+      }
+      @include mobile{
+        font-size: $h6-font-size;
+        line-height: 22px;
+      }
+    }
+    h2{
+      font-size: $h1-font-size;
+      line-height: 90px;
+      font-weight: 700;
+      @include pad{
+        font-size: $h2-font-size;
+        line-height: 67px;
+      }
+      @include mobile{
+        font-size: 32px;
+        line-height: 45px;
+      }
+    }
+  }
+
+/*----------------------------------*/
+
+.main{
+  background-color: $secondary;
+  color: $text-primary;
+  font-weight: 700;
+  padding: 64px 0 80px;
+  @include pad{
+    padding-top: 40px;
+  }
+  @include mobile{
+    padding: 32px 52px;
+  }
+  h2{
+    margin-bottom: 60px;
+    @include pad{
+      margin-bottom: 32px;
+    }
+    @include mobile{
+      margin-bottom: 20px;
+    }
+  }
+  .service{
+    align-items: baseline;
+    flex-wrap: wrap;
+    text-align: center;
+    li{
+     flex-direction: column;
+     width: 208px;
+     @include pad{
+       width: 237px;
+     }
+     img{
+       margin-bottom: 40px;
+       @include pad{
+         margin-bottom: 16px;
+       }
+     }
+     h3{
+       font-size: $h4-font-size;
+       line-height: 33px;
+       margin-bottom: 4px;
+       @include pad{
+         margin-bottom: 8px;
+       }
+     }
+     p{
+       color: $black;
+       text-align: left;
+       font-size: $h6-font-size;
+       line-height: 24px;
+       @include pad{
+         margin-bottom: 40px;
+       }
+     }
+   }
+  }
+}
+
+
+/*----------------------------------*/
+
+
+.classic{
+  padding: 64px 0 80px;
+  @include pad{
+    padding-top: 40px;
+  }
+  @include mobile{
+    padding: 32px 0px;
+  }
+  h2{
+    margin-bottom: 60px;
+    color: $text-primary;
+    @include pad{
+      margin-bottom: 32px;
+    }
+    @include mobile{
+      margin-bottom: 20px;
+    }
+  }
+  .classic-sun{
+    .classic-desc{
+      margin-right: 30px;
+    }
+    @include pad{
+      flex-direction: row;
+    }
+  }
+  li{
+    @include mobile{
+      justify-content: center;
+    }
+  }
+  .classic-pic{
+    margin-bottom: 32px;
+    max-width: 58%;
+    @include pad{
+      margin-bottom: 8px;
+    }
+    @include mobile{
+      position: relative;
+      max-width: 345px;
+    }
+  }
+  .classic-desc{
+    @include mobile{
+      position: absolute;
+    }
+    img{
+      margin-left: 30px;
+      @include mobile{
+        margin-left: 0px;
+      }
+      @include mobile{
+        filter: brightness(300);
+      }
+    }
+    h3{
+      font-family: 'Noto Sans', sans-serif;
+      font-size: $h2-font-size;
+      line-height: 63px;
+      color: $text-secondary;
+      font-weight: 900;
+      font-style: italic;
+      @include pad{
+        font-size: $h3-font-size;
+        line-height: 37px;
+      }
+      @include mobile{
+        color: $white;
+      }
+    }
+    img{
+      @include pad{
+        height: 32px;
+        width: 25px;
+      }
+    }
+  }
+}
+
+
+/*----------------------------------*/
+
+.design{
+  background: url("https://hexschool.github.io/webLayoutTraining1st/week3/bg.png") center center no-repeat;
+  background-size: cover;
+  height: auto;
+  color: $white;
+  padding: 64px 0 80px;
+  @include pad{
+    padding-top: 40px;
+  }
+  @include mobile{
+    padding: 32px 0px;
+  }
+  h2{
+    margin-bottom: 60px;
+    @include pad{
+      margin-bottom: 32px;
+    }
+    @include mobile{
+      margin-bottom: 20px;
+    }
+  }
+  ul{
+    @include pad{
+      flex-wrap: wrap;
+    }
+  }
+  .design-pic{
+    max-width: 47.5%;
+    @include mobile{
+      max-width: 100%;
+      margin-bottom: 16px;
+    }
+    position: relative;
+    &:before{
+      content:'';
+      background-color: rgba(255, 255, 255, 0.4);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    h3{
+      font-family: 'Roboto', sans-serif;
+      font-size: 72px;
+      line-height: 95px;
+      font-weight: 700;
+      white-space: nowrap;
+      color: $text-secondary;
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include pad{
+        font-size: 32px;
+        line-height: 43px;
+      }
+    }
+  }
+}
+
+
+/*----------------------------------*/
+
+.recommend{
+  padding: 64px 0;
+  @include pad{
+    padding: 40px 0;
+  }
+  @include mobile{
+    padding: 32px 0;
+  }
+  font-family: 'Roboto', sans-serif;
+  h2{
+    color: $text-primary;
+    margin-bottom: 60px;
+    @include pad{
+      margin-bottom: 32px;
+    }
+    @include mobile{
+      margin-bottom: 20px;
+    }
+  }
+  ul{
+    @include pad{
+      flex-wrap: wrap;
+    }
+  }
+  .customer{
+    width: 23%;
+    border: 1px solid #DEE2E6;
+    font-size: $font-size-sm;
+    line-height: 19px;
+    @include pad{
+      width: 47%;
+      margin-bottom: 28px;
+    }
+    @include mobile{
+      width: 100%;
+      margin-bottom: 16px;
+    }
+    .customer-pic{
+      img{
+        width: 100%;
+      }
+    }
+    .customer-detail{
+      padding: 14px 16px 15px 14px;
+      h4{
+        margin-bottom: 7px;
+        font-weight: 500;
+      }
+      p{
+        font-size: $h6-font-size;
+        margin-bottom: 16px;
+        line-height: 24px;
+      }
+      span{
+        color:#707070;
+      }
+    }
+  }
+}
+
+
+/*----------------------------------*/
+
+.contact{
+  background: $secondary;
+  font-weight: 400;
+  padding: 64px 0 80px;
+  @include pad{
+    padding: 40px 0px;
+  }
+  .title{
+    margin-bottom: 24px;
+  }
+  .contact-desc{
+    width: 67%;
+    margin: 0 auto;
+    @include pad{
+      width: 100%;
+    }
+
+    p{
+      font-size: $h5-font-size;
+      line-height: 30px;
+      margin-bottom: 20px;
+      @include pad{
+        font-size: $h6-font-size;
+        line-height: 24px;
+      }
+    }
+  }
+  .contact-from{
+    flex-direction: column;
+    label{
+      margin-bottom: 4px;
+    }
+    input, textarea{
+      border: 1px solid $black;
+      padding: 14px 16px;
+      background-color: rgba(255, 255, 255, 0.1);
+      margin-bottom: 16px;
+      &::placeholder{
+        opacity: 0.3;
+        font-size: $h6-font-size;
+        line-height: 21px;
+      }
+      @include mobile{
+        padding: 8px 12px;
+        font-size: $font-size-sm;
+        line-height: 20px;
+      }
+    }
+    .form-check label{
+      margin-left: 4px;
+    }
+    .submit{
+      width: 350px;
+      margin: 0 auto;
+      background-color: $primary;
+      color: $white;
+      font-size: $h6-font-size;
+      line-height: 22px;
+      margin-top: 42px;
+      padding: 16px 0;
+      cursor: pointer;
+      border: none;
+      @include pad{
+        width: 210px;
+        padding: 8px 0;
+        @include mobile{
+          width: 165px;
+        }
+      }
+      &:hover{
+        color: $white;
+        background-color: $text-primary;
+      }
+    }
+  }
+}
