@@ -1,7 +1,6 @@
 // banner
 .banner{
-    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png") center center no-repeat;
-    background-size: cover;
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png") center center /cover no-repeat;
     height: 840px;
     @include pad{
       background-position: 40%;
@@ -58,6 +57,20 @@
   @include mobile{
     padding: 32px 52px;
   }
+  .title{
+    font-size: $h2-font-size;
+    line-height: 67px;
+    text-align: center;
+    font-weight: 700;
+    @include pad{
+        font-size: 32px;
+        line-height: 45px;
+    }
+    @include mobile{
+        font-size: $h4-font-size;
+        line-height: 33px;
+    }
+}
   h2{
     margin-bottom: 60px;
     @include pad{
@@ -72,35 +85,35 @@
     flex-wrap: wrap;
     text-align: center;
     li{
-     flex-direction: column;
-     width: 208px;
-     @include pad{
-       width: 237px;
-     }
-     img{
-       margin-bottom: 40px;
-       @include pad{
-         margin-bottom: 16px;
-       }
-     }
-     h3{
-       font-size: $h4-font-size;
-       line-height: 33px;
-       margin-bottom: 4px;
-       @include pad{
-         margin-bottom: 8px;
-       }
-     }
-     p{
-       color: $black;
-       text-align: left;
-       font-size: $h6-font-size;
-       line-height: 24px;
-       @include pad{
-         margin-bottom: 40px;
-       }
-     }
-   }
+      flex-direction: column;
+      width: 208px;
+      @include pad{
+        width: 237px;
+      }
+      img{
+        margin-bottom: 40px;
+        @include pad{
+          margin-bottom: 16px;
+        }
+      }
+      h3{
+        font-size: $h4-font-size;
+        line-height: 33px;
+        margin-bottom: 4px;
+        @include pad{
+          margin-bottom: 8px;
+        }
+      }
+      p{
+        color: $black;
+        text-align: left;
+        font-size: $h6-font-size;
+        line-height: 24px;
+        @include pad{
+          margin-bottom: 40px;
+        }
+      }
+    }
   }
 }
 
@@ -116,6 +129,20 @@
   @include mobile{
     padding: 32px 0px;
   }
+  .title{
+    font-size: $h2-font-size;
+    line-height: 67px;
+    text-align: center;
+    font-weight: 700;
+    @include pad{
+        font-size: 32px;
+        line-height: 45px;
+    }
+    @include mobile{
+        font-size: $h4-font-size;
+        line-height: 33px;
+    }
+}
   h2{
     margin-bottom: 60px;
     color: $text-primary;
@@ -202,6 +229,20 @@
   @include mobile{
     padding: 32px 0px;
   }
+  .title{
+    font-size: $h2-font-size;
+    line-height: 67px;
+    text-align: center;
+    font-weight: 700;
+    @include pad{
+        font-size: 32px;
+        line-height: 45px;
+    }
+    @include mobile{
+        font-size: $h4-font-size;
+        line-height: 33px;
+    }
+}
   h2{
     margin-bottom: 60px;
     @include pad{
@@ -263,6 +304,20 @@
     padding: 32px 0;
   }
   font-family: 'Roboto', sans-serif;
+  .title{
+    font-size: $h2-font-size;
+    line-height: 67px;
+    text-align: center;
+    font-weight: 700;
+    @include pad{
+        font-size: 32px;
+        line-height: 45px;
+    }
+    @include mobile{
+        font-size: $h4-font-size;
+        line-height: 33px;
+    }
+}
   h2{
     color: $text-primary;
     margin-bottom: 60px;
